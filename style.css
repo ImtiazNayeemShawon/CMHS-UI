@@ -1,0 +1,368 @@
+.ui{
+background-color: #190354;
+margin: 1px;
+}
+body{
+background-color: #190354;
+}
+/*navigation bar start -----------*/
+.navbar{
+background-color: #120646;
+display: flex;
+}
+header{
+margin-top: 0px;
+}
+.dropbtn {
+  color: #fa8619;
+  padding: 10px 10px;
+  font-size: 20px;
+  border: none;
+  margin-top: 0px;
+margin-bottom: 20px;
+  font-family: 'Bebas Neue', cursive;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.dropdown a{
+  text-decoration: none;
+  margin-top: 0px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #120646;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.enter .dropdown-content a {
+  color:  #fa8619;
+  padding: 12px 16px;
+  font-size:20px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Bebas Neue', cursive;
+}
+.enter .dropdown .dropdown-content a:hover {
+  transition: 1s;
+  background-color:#f78214;
+  color: #e9eef2;
+}
+
+.dropdown:hover .dropdown-content {
+  
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+ color: #e9eef2;
+}
+/*navigation bar end -----------*/
+
+
+/*interface start*/
+.interface{ 
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+.interface .text{
+justify-items: center;
+margin-left: 20px;
+}
+.interface .text h3{
+font-size: 40px;
+color: #069c56;
+text-align: center;
+}
+.interface .text h1{
+    
+color: white;
+text-align: center;
+font-size: 100px;
+text-transform: uppercase;
+font-family: 'Bebas Neue', cursive;
+}
+/*.interface .text button{
+margin-left: 250px;
+background-color: #a9fa06;
+padding: 10px;
+border: none;
+border-radius: 10px;
+padding-left: 20px;
+padding-right: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 20px;
+
+}*/
+.interface .png img{
+width: 300px;
+}
+
+/*interface end here -----------------------------------------*/
+.history{
+    margin-top: 20px;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+grid-row-gap:50px ;
+justify-items: center;
+}
+.history div img{
+    width: 250px;
+    height: 300px;
+    border: none;
+    box-shadow: 5px 5px 10px rgb(4, 5, 51);
+border-radius: 15px;
+
+}
+
+#bnc{
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+}
+
+
+
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+.history div{
+color: white;
+
+}
+.history div h6{
+font-size: 25px;
+text-align: center;
+}
+.notice{
+margin-top: 50px;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+grid-row-gap:50px ;
+justify-items: center;
+}
+.notice div h3{
+color: #e9eef2;
+font-size: 20px;
+text-transform: uppercase;
+font-family: 'Bebas Neue', cursive; 
+text-align: center;
+}
+
+.notice div img{
+width: 100px;
+height: 100px;
+border-radius: 50px;
+text-align: center;
+
+}
+.notice div{
+background-color: #c2881d;
+padding: 10px;
+width: 200px;
+border-radius: 50px;
+box-shadow: 20px 5px 2px rgb(32, 13, 68);
+}
+body{
+background-color:  #190354;
+}
+.campus {
+  justify-items: center;
+  display: grid;
+}
+.campus img{
+box-shadow: 2px 10px 2px #0a0427;
+border-radius: 15px;
+}
+.kotha{
+  background-color: #1a0a64;
+  border-radius: 20px;
+  box-shadow: 5px 10px 5px #0f052b;
+  border: 1px solid #1a0a64;
+  margin: 10px;
+
+ 
+}
+.kotha h1 {
+  text-align: center;
+  color: #e9eef2;
+}
+.kotha h3{
+text-align: center;
+margin: 5px;
+  color: #e9eef2;
+}
+
+.re-nav{
+
+  display:none;
+  
+}
+ 
+
+
+
+
+.sidenav {
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(9, 5, 66);
+  overflow-x:scroll;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#close:hover{
+    background-color:  rgb(9, 5, 66);
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media screen and (max-width:900px) {
+  .re-nav{
+    display:block ;
+  }
+  .navbar{
+    display: none;
+  }
+}
+/* side drop down-----------------------------------------------------------------------------*/
+.sidenav .side-down-M .content {
+display: none;
+
+ }
+ .side-down-M:hover .content{
+   display:block 
+ }
+ .side-down-M{
+  margin-left: 10px;
+  margin-top: 10px;
+ }
+ .sidenav a{
+  background-color: rgb(9, 5, 66) ;
+  color: #fa8619;
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border: none;
+  font-family: 'Bebas Neue', cursive;
+ }
+ .side-down-M .content a {
+  color:  #fa8619;
+  padding: 12px 16px;
+  font-size:15px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Bebas Neue', cursive;
+
+}
+.side-down-M .content a:hover{
+background-color: #f78214;
+color: #e9eef2;
+transition: 1s;
+}
+.sidenav a:hover{
+color: #e9eef2;
+}
+/*responsive------------------*/
+@media only screen and (max-width: 600px) {
+  .sidenav a{
+    font-size: 20px;
+  }
+  .side-down-M .content a{
+  font-size: 15px;
+  }
+  .interface .text h1{
+    font-size: 50px;
+  }
+  .interface .text h3{
+    font-size: 30px;
+  }
+  .interface .png #bnc{
+    margin-left: 100px;
+
+  }
+  .history div h1{
+font-size: 20px;
+  }
+  .notice{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  }
+  .notice div{
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .notice div img{
+    width: 40px;
+    height: 40px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .kotha h1{
+    font-size: 30px;
+
+  }
+  .kotha h3{
+    font-size: 20px;
+  
+  }
+  .campus img{
+    max-width: 400px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 400px){
+  .interface .text h1{
+    font-size: 25px;
+   
+  }
+  .interface .text h3{
+    font-size: 20px;
+  }
+  .interface .png img{
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    margin-left: 80px;
+  }
+
+}
