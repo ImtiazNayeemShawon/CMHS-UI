@@ -28,3 +28,6 @@ window.onclick = function(event) {
 function kotha() {
   document.getElementsByClassName("Kotha")
 }
+
+
+
