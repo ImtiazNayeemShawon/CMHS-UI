@@ -373,7 +373,7 @@ font-size: 20px;
   width: fit-content;
 }
 .footer{
-width: fit-content;
+width: 400px;
 }
     .notice{
       grid-gap:40px;
