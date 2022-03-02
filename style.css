@@ -379,6 +379,13 @@ width: 400px;
       grid-gap:40px;
       
     }
+    .history div img{
+      width: 200px;
+      justify-content: center;
+    }
+    .history{
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
 }
 /*media*/
 
