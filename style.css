@@ -370,9 +370,15 @@ font-size: 20px;
     display: none;
   }
 .footer footer div{
-  width: 400px;
+  width: fit-content;
 }
-    
+.footer{
+width: fit-content;
+}
+    .notice{
+      grid-gap:40px;
+      
+    }
 }
 /*media*/
 
