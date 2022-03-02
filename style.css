@@ -319,7 +319,7 @@ color: #e9eef2;
   }
   .interface .png #bnc{
     margin-left: 100px;
-
+display: none;
   }
   .history div h1{
 font-size: 20px;
@@ -354,7 +354,7 @@ font-size: 20px;
 }
 @media only screen and (max-width: 400px){
   .interface .text h1{
-    font-size: 45px;
+    font-size: 50px;
     text-align: center;
    
   }
@@ -369,7 +369,9 @@ font-size: 20px;
     margin: 0px;
     display: none;
   }
-
+.footer footer div{
+  width: 400px;
+}
     
 }
 /*media*/
